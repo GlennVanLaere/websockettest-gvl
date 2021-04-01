@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 Current class mood
+  ul(class="emotions")
+    li(class="angry")
+      img(src="/images/angry.svg" style="width: 40px")
+    li(class="cry")
+      img(src="/images/cry.svg" style="width: 40px")
+    li(class="curious")
+      img(src="/images/curious.svg" style="width: 40px")
+    li(class="cool")
+      img(src="/images/cool.svg" style="width: 40px")
+    li(class="love")
+      img(src="/images/love.svg" style="width: 40px")
+  script(src="/primus/primus.js")
+  script(src="/javascripts/dashboard.js")
