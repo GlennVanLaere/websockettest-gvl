@@ -8,4 +8,7 @@ let primus = Primus.connect("/", {
 
 primus.on("data", (data) => {
     console.log(data);
+    let emo = data.emotion;
+    let width = document.querySelector(`.${emo} img`).style.width;
+    console.log(width);
 })
