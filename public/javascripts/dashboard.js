@@ -14,7 +14,7 @@ primus.on("data", (data) => {
 
     let px = width.substring(0, width.length-2);
 
-    px*1.1;
+    px*=1.1;
     
     document.querySelector(`.${emo} img`).style.width = px + "px";
 })
